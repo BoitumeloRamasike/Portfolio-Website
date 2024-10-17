@@ -1,0 +1,83 @@
+.experience-section, .certificates-section {
+    padding: 40px;
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.experience-item h3, .certificates-section h2 {
+    color: #ff69b4; /* Pink accent */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.certificates-list li {
+    font-size: 1.1rem;
+}
+
+.certificates-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.certificate-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.certificate-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.certificate-image:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.certificate-details h3 {
+    color: #ff69b4; 
+    font-size: 1.5rem;
+}
+
+.certificate-details p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.certificate-item:last-child {
+    border-bottom: none;
+}
+
+.certificate-item a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+.certificate-item a:hover {
+    text-decoration: underline;
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start transparent */
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* End at normal position */
+    }
+}
